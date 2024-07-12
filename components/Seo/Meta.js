@@ -28,7 +28,7 @@ const Meta = ({ children }) => {
         <meta property="og:description" content={METADATA.description} />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/dfhrbwppv/image/upload/v1688034678/snapshot_qe2bza.png"
+          content="https://advanced-portfolio-ashen.vercel.app/mainImage.png"
         />
         <meta property="og:url" content={METADATA.siteUrl} />
         <meta property="og:site_name" content={METADATA.title} />
@@ -42,7 +42,7 @@ const Meta = ({ children }) => {
         <meta property="twitter:url" content={METADATA.siteUrl} />
         <meta
           property="twitter:image"
-          content="https://res.cloudinary.com/dfhrbwppv/image/upload/v1688034678/snapshot_qe2bza.png"
+          content="https://advanced-portfolio-ashen.vercel.app/mainImage.png"
         />
 
         <link
