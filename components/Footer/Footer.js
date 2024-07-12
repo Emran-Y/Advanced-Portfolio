@@ -52,7 +52,7 @@ const Footer = () => {
               <span role="img" aria-label="emoji" className="animate-pulse">
                 ❤️
               </span>{" "}
-              by <span className="text-gray.dark.5">Semir Hamid</span>
+              by <span className="text-gray.dark.5">Emran Yonas</span>
             </p>
           </div>
         </div>
@@ -65,9 +65,8 @@ const Footer = () => {
         height={180}
       />
       <p className="absolute left-[15%] -bottom-[7.5rem] font-extralight text-sm xl:text-base w-[40%]">
-        Call on: +251911528092
+        Call on: +251987394406
         <br />
-        
       </p>
 
       <style jsx global>{`

@@ -6,7 +6,12 @@ const Header = ({ children }) => {
   return (
     <nav className="w-full fixed top-0 py-8 z-50 select-none bg-gradient-to-b from-gray-dark-5 shadow-gray-dark-5 transition-all duration-300">
       <Fade>
-        <div className="flex justify-between section-container">
+        <div
+          className="flex justify-between section-container"
+          style={{
+            height: "100vh",
+          }}
+        >
           <a href="#home" className="link">
             <Image
               src="/logo.svg"

@@ -42,7 +42,7 @@ const success = () =>
 
 const Contact = () => {
   const initialState = { name: "", email: "", message: "" };
-  const [formData, setFormData] = useState(initialState);
+  const [formDataa, setFormDataa] = useState(initialState);
   const [mailerResponse, setMailerResponse] = useState("not initiated");
   const [isSending, setIsSending] = useState(false);
   const buttonEl = useRef(null);
@@ -50,7 +50,7 @@ const Contact = () => {
   const handleChange = ({ target }) => {
     const { id, value } = target;
     value.length === 0 ? setIsSending(false) : setIsSending(true);
-    setFormData((prevVal) => {
+    setFormDataa((prevVal) => {
       if (
         value.trim() !== prevVal[id] &&
         value.trim().length > prevVal[id].trim().length
@@ -63,16 +63,16 @@ const Contact = () => {
   };
 
   const emptyForm = () => {
-    setFormData(initialState);
+    setFormDataa(initialState);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const { name, email, message } = {
-      name: formData.name,
-      email: formData.email,
-      message: formData.message,
+      name: formDataa.name,
+      email: formDataa.email,
+      message: formDataa.message,
     };
 
     if (name === "" || email === "" || message === "") {
@@ -81,19 +81,32 @@ const Contact = () => {
     }
 
     setIsSending(true);
-    mail({ name, email, message })
-      .then((res) => {
-        if (res.status === 200) {
-          setMailerResponse("success");
-          emptyForm();
-        } else {
-          setMailerResponse("error");
-        }
-      })
-      .catch((err) => {
-        setMailerResponse("error");
-        console.error(err);
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbx38Uy0qFctCnX2_f_m3U-75yvYlJ0wI6zmiF7yV_yEwGWG99g15oJ6YHsgHjR9-1J4Sg/exec";
+    const formData = new FormData();
+    formData.append("Name", name);
+    formData.append("Email", email);
+    formData.append(
+      "Message",
+
+      message
+    );
+
+    try {
+      const response = await fetch(scriptURL, {
+        method: "POST",
+        body: formData,
       });
+      if (response.ok) {
+        setMailerResponse("success");
+        emptyForm();
+      } else {
+        setMailerResponse("error");
+      }
+    } catch (error) {
+      setMailerResponse("error");
+      console.error(err);
+    }
   };
 
   useEffect(() => {
@@ -262,7 +275,7 @@ const Contact = () => {
                 type="text"
                 id="name"
                 className="block w-full h-12 sm:h-14 px-4 text-xl sm:text-2xl font-mono outline-none border-2 border-purple bg-transparent rounded-[0.6rem] transition-all duration-200 focus:bg-gray-dark-5  active:bg-gray-dark-5"
-                value={formData.name}
+                value={formDataa.name}
                 onChange={handleChange}
                 required
               />
@@ -279,7 +292,7 @@ const Contact = () => {
                 type="text"
                 id="email"
                 className="block w-full h-12 sm:h-14 px-4 text-xl sm:text-2xl font-mono outline-none border-2 border-purple bg-transparent rounded-[0.6rem] transition-all duration-200 focus:bg-gray-dark-5  active:bg-gray-dark-5"
-                value={formData.email}
+                value={formDataa.email}
                 onChange={handleChange}
                 required
               />
@@ -295,7 +308,7 @@ const Contact = () => {
               <textarea
                 id="message"
                 className="block w-full h-auto min-h-[10rem] max-h-[20rem] sm:h-14 py-2 px-4 text-xl sm:text-2xl font-mono outline-none border-2 border-purple bg-transparent rounded-[0.6rem] transition-all duration-200 focus:bg-gray-dark-5  active:bg-gray-dark-5"
-                value={formData.message}
+                value={formDataa.message}
                 onChange={handleChange}
                 required
               />
@@ -320,9 +333,9 @@ const Contact = () => {
             className={styles.button}
             ref={buttonEl}
             disabled={
-              formData.name === "" ||
-              formData.email === "" ||
-              formData.message === ""
+              formDataa.name === "" ||
+              formDataa.email === "" ||
+              formDataa.message === ""
                 ? true
                 : false
             }
