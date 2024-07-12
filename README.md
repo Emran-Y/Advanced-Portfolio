@@ -1,5 +1,4 @@
-
-# Semir Hamid's Portfolio 🚀
+# Emran Yonas's Portfolio 🚀
 
 Welcome to my portfolio! Here you'll find a showcase of my projects and skills. Feel free to explore and reach out if you have any questions or opportunities!
 
@@ -38,7 +37,7 @@ You can always draw inspiration from the design, and no, you don't have to give 
 
 ## About Me
 
-Hi there! I'm Semir Hamid, a passionate developer based in Ethiopia. I love building awesome web experiences and exploring new technologies.
+Hi there! I'm Emran Yonas, a passionate developer based in Ethiopia. I love building awesome web experiences and exploring new technologies.
 
 ## Contact Me
 

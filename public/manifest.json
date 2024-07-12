@@ -4,9 +4,9 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "name": "Portfolio | Semir Hamid",
-  "short_name": "Semir Hamid",
-  "description": "Semir Hamid's Portfolio Website.",
+  "name": "Portfolio | Emran Yonas",
+  "short_name": "Emran Y",
+  "description": "Emran Yonas's Portfolio Website.",
   "icons": [
     {
       "src": "/icon-192x192.png",
