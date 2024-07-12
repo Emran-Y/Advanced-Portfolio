@@ -1,16 +1,20 @@
 {
   "private": true,
+  "name": "Advanced-Portfolio",
+  "homepage": "https://emran-y.github.io/Advanced-Portfolio",
   "license": "",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
     "bad-words": "^3.0.4",
-    "gh-pages": "^2.0.1",
+    "gh-pages": "^6.1.1",
     "gsap": "^3.8.0",
     "lottie-web": "^5.11.0",
     "next": "^13.0.0",
