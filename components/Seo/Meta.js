@@ -12,7 +12,7 @@ const Meta = ({ children }) => {
           content="Emran Yonas, Full Stack Developer, Software Developer, Software Engineer, Portfolio, Web Development, Web Developer"
         />
         <meta name="robots" content="index, follow" />
-        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charSet="UTF-8" />
         <meta name="language" content="English" />
         <meta name="author" content="Emran Yonas" />
         <meta
@@ -20,7 +20,6 @@ const Meta = ({ children }) => {
           content="All rights reserved, 2023. Emran Yonas"
         />
         <meta httpEquiv="content-language" content="en" />
-
         {/* Open Graph / Facebook */}
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
@@ -30,9 +29,10 @@ const Meta = ({ children }) => {
           property="og:image"
           content="https://advanced-portfolio-ashen.vercel.app/mainImage.png"
         />
+        <meta property="og:image:alt" content="Description of the image" />{" "}
+        {/* Optional */}
         <meta property="og:url" content={METADATA.siteUrl} />
         <meta property="og:site_name" content={METADATA.title} />
-
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:title" content={METADATA.title} />
@@ -44,7 +44,8 @@ const Meta = ({ children }) => {
           property="twitter:image"
           content="https://advanced-portfolio-ashen.vercel.app/mainImage.png"
         />
-
+        <meta property="twitter:image:alt" content="Description of the image" />{" "}
+        {/* Optional */}
         <link
           rel="apple-touch-icon"
           sizes="180x180"
