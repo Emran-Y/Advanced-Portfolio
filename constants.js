@@ -181,7 +181,7 @@ export const PROJECTS = [
     blurImage: "/projects/blur/merkato_market.webp",
     description: "React + css + sass",
     gradient: ["#46C0F1", "#254ADC"],
-    url: "https://github.com/semirhamid/Merkato-Market",
+    url: "#",
     tech: ["react", "nextjs", "tailwindcss", "mapbox"],
   },
   {
@@ -190,7 +190,7 @@ export const PROJECTS = [
     blurImage: "/projects/kebele_blur.jpg",
     description: "React + css + sass + Asp Net Core",
     gradient: ["#46F1AA", "#254ADC"],
-    url: "https://github.com/semirhamid",
+    url: "#",
     tech: ["react", "nextjs", "tailwindcss", "mapbox"],
   },
   {
@@ -199,7 +199,7 @@ export const PROJECTS = [
     blurImage: "/projects/calculator.jpg",
     description: "flutter",
     gradient: ["#F0B369", "#EA8F1F"],
-    url: "https://github.com/semirhamid/PostgresDbBackupandRestore",
+    url: "#",
     tech: ["flutter"],
   },
   {
@@ -208,7 +208,7 @@ export const PROJECTS = [
     blurImage: "/projects/electricity_billing.png",
     description: "React + css + sass + Asp Net Core",
     gradient: ["#522356", "#254ADC"],
-    url: "https://github.com/semirhamid",
+    url: "#",
     tech: ["react", "nextjs", "tailwindcss", "mapbox"],
   },
   {
@@ -217,7 +217,7 @@ export const PROJECTS = [
     blurImage: "/projects/blur/complier.webp",
     description: "React + css + sass",
     gradient: ["#D664DA", "#D818DE"],
-    url: "https://github.com/semirhamid/Csharp-to-Assembly",
+    url: "#",
     tech: ["react", "nextjs", "tailwindcss", "mapbox"],
   },
   {
@@ -226,7 +226,7 @@ export const PROJECTS = [
     blurImage: "/projects/blur/fitness.webp",
     description: "Flutter + BLoC",
     gradient: ["#522356", "#939504"],
-    url: "https://github.com/semirhamid/Fitness-Tracking",
+    url: "#",
     tech: ["react", "nextjs", "tailwindcss", "mapbox"],
   },
   {
@@ -235,7 +235,7 @@ export const PROJECTS = [
     blurImage: "/projects/blur/postgres.webp",
     description: "CSharp + Asp Net Core",
     gradient: ["#F0B369", "#EA8F1F"],
-    url: "https://github.com/semirhamid/PostgresDbBackupandRestore",
+    url: "#",
     tech: ["react", "nextjs", "tailwindcss", "mapbox"],
   },
   {
@@ -244,7 +244,7 @@ export const PROJECTS = [
     blurImage: "/projects/blur/movie.webp",
     description: "CSharp + Asp Net Core + React",
     gradient: ["#F14658", "#DC2537"],
-    url: "https://github.com/semirhamid/Cinema-Movie",
+    url: "#",
     tech: ["react", "nextjs", "tailwindcss", "mapbox"],
   },
 ];
